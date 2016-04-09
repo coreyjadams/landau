@@ -25,4 +25,5 @@ To use the package, do:
 
 
 python setup.py build
+
 python setup.py install
