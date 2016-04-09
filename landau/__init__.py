@@ -1,3 +1,9 @@
+try:
+  import _landau
+except:
+  Raise("Need to build the package first!")
 
-def joke():
-  return "Ha, ha, fuck you."
+__all__ = ['landau']
+
+
+
