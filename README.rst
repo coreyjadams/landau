@@ -17,7 +17,9 @@ You can also use single elements in the functions and that works.
 There are three functions implemented:
 
 gauss(x_vals, gauss_mean, gauss_sigma, normed=False) applies the normal distribution to your input
+
 landau(x_vals, landau_mu, landau_sigma, scale=1.0) applies a landau function
+
 gauss_landau(x_vals, landau_mu, landau_sigma, gauss_sigma, scale=1.0) applies a landau function convolved with a gaussian.
 
 
