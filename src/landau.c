@@ -30,6 +30,7 @@ PyMODINIT_FUNC init_landau(void)
 
   /* Load `numpy` functionality. */
   import_array();
+  return;
 }
 
 static PyObject *landau_gauss(PyObject *self, PyObject *args)

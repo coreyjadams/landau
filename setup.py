@@ -17,7 +17,7 @@ def readme():
 setup(
     name='landau',
     ext_modules=[Extension("_landau", ["src/landau.c", "src/landau_funcs.c"])],
-    include_dirs=[numpy.distutils.misc_util.get_numpy_include_dirs(), "inc/"],
+    include_dirs=[numpy.get_include(), "inc/"],
     version='0.1',
     description='Landau functions with fast gaussian convolutions.',
     url='http://github.com/storborg/funniest',
