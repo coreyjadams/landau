@@ -26,11 +26,11 @@ PyMODINIT_FUNC init_landau(void)
 {
   PyObject *m = Py_InitModule3("_landau", module_methods, module_docstring);
   if (m == NULL)
-    return 0;
+    return;
 
   /* Load `numpy` functionality. */
   import_array();
-  return 0;
+  return;
 }
 
 static PyObject *landau_gauss(PyObject *self, PyObject *args)
