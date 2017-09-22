@@ -7,8 +7,7 @@
 # )
 
 from setuptools import setup, Extension
-import numpy.distutils.misc_util
-
+import numpy
 
 def readme():
     with open('README.rst') as f:
@@ -20,9 +19,9 @@ setup(
     include_dirs=[numpy.get_include(), "inc/"],
     version='0.1',
     description='Landau functions with fast gaussian convolutions.',
-    url='http://github.com/storborg/funniest',
+    url='https://github.com/coreyjadams/landau',
     author='Corey Adams',
-    author_email='corey.adams@yale.edu',
+    author_email='coreyadams@fas.harvard.edu',
     license='MIT',
     packages=['landau'],
     install_requires=[
