@@ -44,7 +44,7 @@ def gauss_landau(x_vals, landau_mu, landau_sigma, gauss_sigma, scale=1.0):
     sigma is a horizontal scale factor.  The true sigma
     of a landau distribution is undefined.
     '''
-    y_vals = _landau.gausslandau(x_vals,landa_mu,landau_sigma, gauss_sigma)
+    y_vals = _landau.gausslandau(x_vals,landau_mu,landau_sigma, gauss_sigma)
     if scale != 1.0:
       y_vals *= scale
       return y_vals

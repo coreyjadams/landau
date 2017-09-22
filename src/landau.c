@@ -18,7 +18,7 @@ static PyObject *landau_gausslandau(PyObject *self, PyObject *args);
 static PyMethodDef module_methods[] = {
   {"gauss", landau_gauss, METH_VARARGS, gauss_docstring},
   {"landau", landau_landau, METH_VARARGS, landau_docstring},
-  {"convlangau", landau_gausslandau, METH_VARARGS, gausslandau_docstring},
+  {"gausslandau", landau_gausslandau, METH_VARARGS, gausslandau_docstring},
   {NULL, NULL, 0, NULL}
 };
 
@@ -26,11 +26,11 @@ PyMODINIT_FUNC init_landau(void)
 {
   PyObject *m = Py_InitModule3("_landau", module_methods, module_docstring);
   if (m == NULL)
-    return;
+    return 0;
 
   /* Load `numpy` functionality. */
   import_array();
-  return;
+  return 0;
 }
 
 static PyObject *landau_gauss(PyObject *self, PyObject *args)
